@@ -15,7 +15,7 @@ const Coin = ({ name, image, symbol, price, marketCap, priceChange }) => {
           priceChange > 0 ? styles.greenPriceChange : styles.redPriceChange
         }
       >
-        {priceChange}
+        {priceChange.toFixed(2)} %
       </span>
       <span>{marketCap.toLocaleString()} </span>
     </div>
